@@ -5,28 +5,22 @@
 	<meta charset="UTF-8">
 </head>
 <body>
-	<h1>variaveis javaScript</h1>
+	<h1>Função no javaScript</h1>
 	<script type="text/javascript">
+		//Declara e nomea função chamada pulalinha
+		function pulaLinha () {
+			//copor da função, bloco de codigo que realiza uma tarefa.
+			document.write ("<br>");
+		}
+		var ano = 2015;
+		var natural = "Teresina";
+		var estado = "Piaui";
+		document.write("Eu nasci em:" + (ano - 89));
+		pulaLinha(); //Insere quebra de linh, o br
+		document.write("Sou natura de :" + natural);
+		pulaLinha();
+		document.write("estado:" + estado);
 		
-		var n1 = 3;
-		var n2 = 3;
-		var b1 = "lua";
-		var b2 = "sol";
-		document.write("<h2>Testando as variaveis b1 e b2</h2>");
-		if (b1 != b2) {
-			//Este bloco de codigo só será esxucutado se o teste
-			//tiver como resultado true.
-			document.write("Não é igual, ou seja true.");
-		} else {
-			//Este bloco de codigo só será executado se o teste
-			//Tiver como resultsdo falso.
-			document.write(" É igual ou seja falso")
-		};
-
-
-		//2 == 2 // true
-		//"agua" == "-água" // false
-		//"1kg de algodão" == "1kg de ferro" // false
 	</script>
 </body>
 </html>
