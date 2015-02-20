@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Trabalhando com variaveis</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Mais Funções no javaScript</h1>
+	<script type="text/javascript">
+		//Declara e nomea função chamada pulalinha
+		function pulaLainha () {
+			//copor da função, bloco de codigo que realiza uma tarefa.
+			document.write ("<br>");
+		}
+		// Cria uma função que recebe um parametro e exibe uma mensagem.
+		function mostra(dado) {
+			document.write(dado);
+
+		}
+		function calculaIMC(peso, altura) {
+			var imc = peso / (altura * altura);
+			//passando para a função mostra exibir o resultado.
+			// usando o metodo round da classa Math para arredondar.
+			mostra(" Seu IMC é: " + Math.round(imc));
+		}
+		//Chamada a função para o resultado do calculo.
+		calculaIMC(73, 1.70);
+		
+	</script>
+</body>
+</html>
