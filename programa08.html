@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Chamadas as Funções</title>
+	<meta charset="UTF-8">
+</head>
+<body>
+	<h1>Entendendo e ordem de chamada das funções em javaScript</h1>
+	<script type="text/javascript">
+		// Funções
+		function primeira() {
+			console.log("2ª - Antes");
+			terceiro();
+			console.log("2ª - Depois");
+		}
+		function terceira() {
+			console.log("3ª")
+		}
+		//código principal
+		primeira();
+		
+	</script>
+</body>
+</html>
