@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<title>Chamadas as Funções</title>
+	<title>Estrutura de controle</title>
 	<meta charset="UTF-8">
 </head>
 <body>
-	<h1>Entendendo e ordem de chamada das funções em javaScript</h1>
+	<h1>Entendendo o IF</h1>
 	<script type="text/javascript">
-		// Funções
-		function primeira() {
-			console.log("2ª - Antes");
-			terceiro();
-			console.log("2ª - Depois");
+		function calculaIMC() {
+			/*A funçaõ prompt capture a entrada de dados do teclado do usuario*/
+			// A função parseInt converte uma string para inteiro.
+			var peso = parseInt(prompt("Informe seu peso"));
+			var altura = parseFloat(prompt("Informe sua altura"));
+			var imc = peso / (altura * altura);
+			if (imc < 18) {
+				document.write("Seu IMC é: " + imc + "<br>");
+				document.write("Cuidado, seu status é: Magresa.")
+			} else {
+				document.write("Seu IMC é: " + imc + "<br>");
+				document.write("Pelomenos Magresa você não tem.");
+			}
+			
+
 		}
-		function terceira() {
-			console.log("3ª")
-		}
-		//código principal
-		primeira();
+		//Chama a funão para a resultado do calculo.
+		calculaIMC();
+		
+		
 		
 	</script>
 </body>
